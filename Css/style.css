@@ -65,6 +65,7 @@ img {
 .header-link-vector:hover,
 .header-link-vector:focus {
   fill: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
@@ -144,6 +145,7 @@ img {
 .header-link-blue-portfolio:hover,
 .header-link-blue-portfolio:focus {
   color: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link-blue-portfolio::after {
   content: "";
@@ -172,6 +174,7 @@ img {
 .header-link-blue-studio:hover,
 .header-link-blue-studio:focus {
   color: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-portfolio-i {
@@ -190,6 +193,7 @@ img {
 .header-link-portfolio-i:hover,
 .header-link-portfolio-i:focus {
   color: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-studio-p {
@@ -208,6 +212,7 @@ img {
 .header-link-studio-p:hover,
 .header-link-studio-p:focus {
   color: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contacts-i {
@@ -226,6 +231,7 @@ img {
 .header-link-contacts-i:hover,
 .header-link-contacts-i:focus {
   color: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contacts-p {
@@ -244,6 +250,7 @@ img {
 .header-link-contacts-p:hover,
 .header-link-contacts-p:focus {
   color: var(--blue);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail {
@@ -262,6 +269,7 @@ img {
 .mail:hover {
   color: var(--blue);
   fill: var(--blue);
+  transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel {
   font-style: normal;
@@ -279,6 +287,7 @@ img {
 .tel:hover {
   color: var(--blue);
   fill: var(--blue);
+  transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Main conteiner */
 .main-content {
@@ -404,6 +413,29 @@ img {
   display: flex;
 }
 
+.about-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.subtitle-about {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* ------team------ */
 
 .team {
@@ -477,6 +509,7 @@ img {
   cursor: pointer;
   background-color: var(--blue);
   border-radius: 50%;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon-list {
@@ -543,6 +576,7 @@ img {
   cursor: pointer;
   border: 1px solid var(--blue);
   border-radius: 4px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----footer----- */
@@ -592,6 +626,7 @@ img {
 .contact:hover,
 .contact:focus {
   color: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subtitle {
@@ -636,6 +671,7 @@ footer .container {
 .footer-icon-link:hover {
   background-color: var(--blue);
   cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-style {
@@ -679,6 +715,7 @@ footer .container {
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio {
   font-style: normal;
@@ -699,6 +736,7 @@ footer .container {
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------ portfolio------ */
@@ -710,12 +748,14 @@ footer .container {
 }
 .link-portfolio {
   display: block;
+  height: ;
 }
 
 .link-portfolio:hover,
 .link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subtitle-overlay {
@@ -736,8 +776,8 @@ footer .container {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  transform: translateY(100%);
-  transition: transform 300ms linear;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subtitle-overlay:hover .subtitle-top {
@@ -756,7 +796,6 @@ footer .container {
 }
 
 .portfolio-list-box-second {
-  width: 370px;
   background-color: var(--white);
 }
 
