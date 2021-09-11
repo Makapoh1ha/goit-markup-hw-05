@@ -78,6 +78,45 @@ img {
   fill: var(--blue);
 }
 
+.mail {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+  color: var(--grey);
+  cursor: pointer;
+  fill: var(--grey);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail:focus,
+.mail:hover {
+  color: var(--blue);
+  fill: var(--blue);
+}
+.tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+  color: var(--grey);
+  cursor: pointer;
+  fill: var(--grey);
+  align-items: center;
+  display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tel:focus,
+.tel:hover {
+  color: var(--blue);
+  fill: var(--blue);
+}
+
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -263,44 +302,6 @@ img {
   color: var(--blue);
 }
 
-.mail {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.19;
-  letter-spacing: 0.02em;
-  color: var(--grey);
-  cursor: pointer;
-  fill: var(--grey);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mail:focus,
-.mail:hover {
-  color: var(--blue);
-  fill: var(--blue);
-}
-.tel {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.19;
-  letter-spacing: 0.02em;
-  color: var(--grey);
-  cursor: pointer;
-  fill: var(--grey);
-  align-items: center;
-  display: flex;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.tel:focus,
-.tel:hover {
-  color: var(--blue);
-  fill: var(--blue);
-}
 /* Main conteiner */
 .main-content {
   margin-left: auto;
@@ -981,7 +982,7 @@ footer .container {
 .btn-close {
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: unset;
   border-radius: 50%;
   position: absolute;
@@ -995,6 +996,12 @@ footer .container {
 
 .icon-backdrop {
   fill: var(--black);
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-backdrop:focus,
+.icon-backdrop:hover {
+  fill: var(--blue);
 }
 
 .backdrop.is-hidden {
@@ -1041,6 +1048,16 @@ footer .container {
   border-radius: 4px;
   padding-left: 42px;
   height: 40px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--blue);
+}
+
+.modal-input:focus {
+  border: 1px solid var(--blue);
 }
 
 .modal-textarea-text {
@@ -1067,6 +1084,7 @@ footer .container {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-link {
